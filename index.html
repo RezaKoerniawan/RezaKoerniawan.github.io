@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reza Kurniawan — Senior Android Developer with 10+ years of experience in Kotlin, Java, Jetpack Compose, and Clean Architecture." />
+  <meta name="theme-color" content="#090d16" />
+  <title>Reza Kurniawan — Senior Android Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <style>
+    :root { color-scheme: dark; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background:#090d16; color:#e2e8f0; }
+    .font-mono-code { font-family:'JetBrains Mono', monospace; }
+    .bento-card { background:linear-gradient(145deg,rgba(30,41,59,.55),rgba(15,23,42,.8)); border:1px solid rgba(148,163,184,.12); transition:all .3s ease; }
+    .bento-card:hover { border-color:rgba(16,185,129,.45); transform:translateY(-2px); box-shadow:0 12px 30px -10px rgba(16,185,129,.15); }
+    .lang-id { display:none; }
+    body.id-mode .lang-en { display:none !important; }
+    body.id-mode .lang-id { display:inline; }
+    body.id-mode p.lang-id, body.id-mode div.lang-id, body.id-mode ul.lang-id { display:block; }
+    .section-anchor { scroll-margin-top:90px; }
+  </style>
+</head>
+<body class="antialiased selection:bg-emerald-500 selection:text-slate-950">
+  <nav class="sticky top-0 z-50 bg-[#090d16]/90 backdrop-blur-lg border-b border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center gap-4">
+      <a href="#top" class="flex items-center gap-2 text-lg font-extrabold tracking-tight text-white" aria-label="Reza Android home">
+        <span class="w-8 h-8 rounded-lg bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400"><i class="fa-brands fa-android"></i></span>
+        <span>reza<span class="text-emerald-400">.android</span></span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+        <a href="#apps" class="hover:text-emerald-400 transition"><span class="lang-en">Featured Apps</span><span class="lang-id">Aplikasi Unggulan</span></a>
+        <a href="#stack" class="hover:text-emerald-400 transition"><span class="lang-en">Tech Stack</span><span class="lang-id">Teknologi</span></a>
+        <a href="#experience" class="hover:text-emerald-400 transition"><span class="lang-en">Experience</span><span class="lang-id">Pengalaman</span></a>
+        <a href="#contact" class="hover:text-emerald-400 transition"><span class="lang-en">Contact</span><span class="lang-id">Kontak</span></a>
+      </div>
+      <div class="flex items-center bg-slate-900 p-1 rounded-lg border border-slate-800" aria-label="Language selector">
+        <button id="btn-en" type="button" onclick="setLanguage('en')" aria-pressed="true" class="px-3 py-1 text-xs font-bold rounded-md bg-emerald-500 text-slate-950 transition">EN</button>
+        <button id="btn-id" type="button" onclick="setLanguage('id')" aria-pressed="false" class="px-3 py-1 text-xs font-bold rounded-md text-slate-400 hover:text-white transition">ID</button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="max-w-6xl mx-auto px-6 pt-12 pb-16">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        <div class="lg:col-span-8 bento-card rounded-3xl p-8 md:p-10 flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute -right-16 -top-16 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+          <div class="relative">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs font-semibold mb-6">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span class="lang-en">Available for Senior Android Opportunities</span><span class="lang-id">Terbuka untuk Peluang Senior Android</span>
+            </div>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-3">Reza Kurniawan</h1>
+            <p class="font-mono-code text-emerald-400 text-sm md:text-base mb-6">Senior Android Developer • Jetpack Compose &amp; Clean Architecture</p>
+            <p class="text-slate-300 text-base leading-relaxed mb-8 lang-en">Senior Mobile Engineer with <strong>10+ years of experience</strong> building, modernizing, and maintaining Android applications across <strong>Healthcare, Fintech, E-Commerce, and Logistics</strong>. Experienced in Java-to-Kotlin migration, modern Android architecture, API integration, and end-to-end production delivery.</p>
+            <p class="text-slate-300 text-base leading-relaxed mb-8 lang-id">Senior Mobile Engineer dengan pengalaman <strong>10+ tahun</strong> membangun, memodernisasi, dan memelihara aplikasi Android di bidang <strong>Healthcare, Fintech, E-Commerce, dan Logistik</strong>. Berpengalaman dalam migrasi Java ke Kotlin, arsitektur Android modern, integrasi API, serta pengembangan aplikasi hingga produksi.</p>
+          </div>
+          <div class="relative flex flex-wrap gap-3">
+            <a href="#contact" class="px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-sm transition inline-flex items-center gap-2"><i class="fa-solid fa-paper-plane"></i><span class="lang-en">Contact Me</span><span class="lang-id">Hubungi Saya</span></a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-white font-semibold text-sm transition inline-flex items-center gap-2"><i class="fa-brands fa-github"></i>GitHub</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="px-5 py-3 rounded-xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700 text-white font-semibold text-sm transition inline-flex items-center gap-2"><i class="fa-brands fa-linkedin text-sky-400"></i>LinkedIn</a>
+          </div>
+        </div>
+        <div class="lg:col-span-4 grid grid-cols-2 lg:grid-cols-1 gap-6">
+          <div class="bento-card rounded-3xl p-7 flex flex-col justify-center"><span class="text-4xl md:text-5xl font-extrabold text-white mb-1">10<span class="text-emerald-400">+</span></span><span class="text-sm font-semibold text-slate-300"><span class="lang-en">Years in Android Engineering</span><span class="lang-id">Tahun Pengalaman Android</span></span><span class="text-xs text-slate-500 mt-1">2015 — 2026 • Jakarta, Indonesia</span></div>
+          <div class="bento-card rounded-3xl p-7 flex flex-col justify-center"><span class="text-4xl md:text-5xl font-extrabold text-white mb-1">6<span class="text-emerald-400">+</span></span><span class="text-sm font-semibold text-slate-300"><span class="lang-en">Production Apps &amp; Projects</span><span class="lang-id">Aplikasi &amp; Proyek Produksi</span></span><span class="text-xs text-slate-500 mt-1">Prodia, Lion Parcel, Stockbit, Alodokter</span></div>
+        </div>
+      </div>
+    </header>
+
+    <section id="apps" class="section-anchor max-w-6xl mx-auto px-6 py-16">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10"><div><span class="font-mono-code text-xs uppercase tracking-wider text-emerald-400">Product Showcase</span><h2 class="text-2xl md:text-3xl font-bold text-white mt-1"><span class="lang-en">Featured Production Apps</span><span class="lang-id">Portofolio Aplikasi Produksi</span></h2></div><p class="text-sm text-slate-400 mt-2 md:mt-0"><span class="lang-en">Selected products and projects I have contributed to</span><span class="lang-id">Produk dan proyek pilihan yang pernah saya kerjakan</span></p></div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <article class="bento-card rounded-3xl p-7 flex flex-col justify-between">
+          <div><div class="flex items-start justify-between gap-4 mb-5"><div><span class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">Healthcare &amp; Lab Diagnostics</span><h3 class="text-xl font-bold text-white mt-1">U by Prodia</h3><p class="text-xs text-slate-500 mt-1">Aleph Labs Indonesia</p></div><span class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center"><i class="fa-solid fa-heart-pulse text-lg"></i></span></div>
+          <p class="text-sm text-slate-300 leading-relaxed lang-en">Developed and maintained core healthcare features using modern Android technologies. Worked on REST API integration, code refactoring, performance optimization, and unit/UI testing.</p><p class="text-sm text-slate-300 leading-relaxed lang-id">Mengembangkan dan memelihara fitur kesehatan utama menggunakan teknologi Android modern. Mengerjakan integrasi REST API, refactoring kode, optimasi performa, serta pengujian unit dan UI.</p></div>
+          <div class="flex flex-wrap gap-2 mt-6"><span class="tech">Jetpack Compose</span><span class="tech">Kotlin</span><span class="tech">Clean Architecture</span><span class="tech">MVVM</span></div>
+        </article>
+        <article class="bento-card rounded-3xl p-7 flex flex-col justify-between">
+          <div><div class="flex items-start justify-between gap-4 mb-5"><div><span class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">Logistics &amp; Delivery</span><h3 class="text-xl font-bold text-white mt-1">Lion Parcel App Revamp</h3><p class="text-xs text-slate-500 mt-1">PT MSBU</p></div><span class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center"><i class="fa-solid fa-box text-lg"></i></span></div>
+          <p class="text-sm text-slate-300 leading-relaxed lang-en">Contributed to the Android application revamp, improving UI components and parcel-delivery operational flows, including shipment tracking and booking experiences.</p><p class="text-sm text-slate-300 leading-relaxed lang-id">Berkontribusi dalam revamp aplikasi Android, meningkatkan komponen UI dan alur operasional pengiriman paket, termasuk pengalaman pelacakan dan pemesanan pengiriman.</p></div>
+          <div class="flex flex-wrap gap-2 mt-6"><span class="tech">App Revamp</span><span class="tech">Kotlin</span><span class="tech">REST API</span><span class="tech">UI Refinement</span></div>
+        </article>
+        <article class="bento-card rounded-3xl p-7 flex flex-col justify-between">
+          <div><div class="flex items-start justify-between gap-4 mb-5"><div><span class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">Fintech &amp; Stock Investment</span><h3 class="text-xl font-bold text-white mt-1">Stockbit Malaysia</h3><p class="text-xs text-slate-500 mt-1">PT Trenologi Indonesia</p></div><span class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center"><i class="fa-solid fa-chart-line text-lg"></i></span></div>
+          <p class="text-sm text-slate-300 leading-relaxed lang-en">Developed investment features and integrated third-party financial APIs for the Malaysian market, with attention to application reliability and release quality.</p><p class="text-sm text-slate-300 leading-relaxed lang-id">Mengembangkan fitur investasi dan mengintegrasikan API finansial pihak ketiga untuk pasar Malaysia, dengan memperhatikan keandalan aplikasi dan kualitas rilis.</p></div>
+          <div class="flex flex-wrap gap-2 mt-6"><span class="tech">Fintech</span><span class="tech">Kotlin Coroutines</span><span class="tech">Clean Architecture</span><span class="tech">MVVM</span></div>
+        </article>
+        <article class="bento-card rounded-3xl p-7 flex flex-col justify-between">
+          <div><div class="flex items-start justify-between gap-4 mb-5"><div><span class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">Telemedicine Platform</span><h3 class="text-xl font-bold text-white mt-1">Alodokter — Booking Squad</h3><p class="text-xs text-slate-500 mt-1">PT Sumo Teknologi Solusi</p></div><span class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center"><i class="fa-solid fa-stethoscope text-lg"></i></span></div>
+          <p class="text-sm text-slate-300 leading-relaxed lang-en">Worked on the Java-to-Kotlin migration and architecture improvements using Clean Architecture and MVVM for doctor and hospital booking features.</p><p class="text-sm text-slate-300 leading-relaxed lang-id">Mengerjakan migrasi Java ke Kotlin dan peningkatan arsitektur menggunakan Clean Architecture dan MVVM pada fitur pemesanan dokter dan rumah sakit.</p></div>
+          <div class="flex flex-wrap gap-2 mt-6"><span class="tech">Java-to-Kotlin</span><span class="tech">Clean Architecture</span><span class="tech">MVVM</span><span class="tech">Refactoring</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack" class="section-anchor max-w-6xl mx-auto px-6 py-16">
+      <div class="mb-10"><span class="font-mono-code text-xs uppercase tracking-wider text-emerald-400">Core Competencies</span><h2 class="text-2xl md:text-3xl font-bold text-white mt-1"><span class="lang-en">Android Engineering Stack</span><span class="lang-id">Keahlian Teknis &amp; Arsitektur</span></h2></div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bento-card rounded-3xl p-7"><h3 class="font-bold text-white mb-5"><i class="fa-solid fa-mobile-screen-button text-emerald-400 mr-2"></i><span class="lang-en">Modern Android &amp; UI</span><span class="lang-id">Android Modern &amp; UI</span></h3><div class="flex flex-wrap gap-2"><span class="tech">Kotlin</span><span class="tech">Java</span><span class="tech">Jetpack Compose</span><span class="tech">Android SDK</span><span class="tech">Android Jetpack</span></div></div>
+        <div class="bento-card rounded-3xl p-7"><h3 class="font-bold text-white mb-5"><i class="fa-solid fa-layer-group text-emerald-400 mr-2"></i><span class="lang-en">Architecture &amp; Async</span><span class="lang-id">Arsitektur &amp; Asinkron</span></h3><div class="flex flex-wrap gap-2"><span class="tech">Clean Architecture</span><span class="tech">MVVM</span><span class="tech">Kotlin Coroutines</span><span class="tech">Kotlin Flow</span><span class="tech">Dagger Hilt</span></div></div>
+        <div class="bento-card rounded-3xl p-7"><h3 class="font-bold text-white mb-5"><i class="fa-solid fa-database text-emerald-400 mr-2"></i><span class="lang-en">Data, API &amp; Quality</span><span class="lang-id">Data, API &amp; Kualitas</span></h3><div class="flex flex-wrap gap-2"><span class="tech">Retrofit &amp; OkHttp</span><span class="tech">Room DB</span><span class="tech">Firebase</span><span class="tech">Unit &amp; UI Testing</span><span class="tech">Git / CI-CD</span></div></div>
+      </div>
+    </section>
+
+    <section id="experience" class="section-anchor max-w-6xl mx-auto px-6 py-16">
+      <div class="mb-10"><span class="font-mono-code text-xs uppercase tracking-wider text-emerald-400">Career Track Record</span><h2 class="text-2xl md:text-3xl font-bold text-white mt-1"><span class="lang-en">Work Experience</span><span class="lang-id">Riwayat Pengalaman Kerja</span> <span class="text-slate-500 text-lg">(2015 — 2026)</span></h2></div>
+      <div class="bento-card rounded-3xl p-7 md:p-9">
+        <ol class="relative border-l border-slate-700 ml-2 space-y-8">
+          <li class="ml-7"><span class="absolute -left-[5px] mt-1.5 w-2.5 h-2.5 rounded-full bg-emerald-400 ring-4 ring-[#101827]"></span><div class="flex flex-col sm:flex-row sm:justify-between gap-1"><h3 class="font-bold text-white">Freelance Android Developer — Synergy WorldWide</h3><span class="font-mono-code text-xs text-emerald-400">Oct 2025 – Jun 2026</span></div><p class="text-sm text-slate-400 mt-1">Synergy WorldWide Android Application v2.0</p></li>
+          <li class="ml-7"><span class="absolute -left-[5px] mt-1.5 w-2.5 h-2.5 rounded-full bg-emerald-400 ring-4 ring-[#101827]"></span><div class="flex flex-col sm:flex-row sm:justify-between gap-1"><h3 class="font-bold text-white">Android Developer — PT MSBU (Lion Parcel)</h3><span class="font-mono-code text-xs text-emerald-400">Nov 2025 – Mar 2026</span></div><p class="text-sm text-slate-400 mt-1">Logistics Android Application Revamp</p></li>
+          <li class="ml-7"><span class="absolute -left-[5px] mt-1.5 w-2.5 h-2.5 rounded-full bg-emerald-400 ring-4 ring-[#101827]"></span><div class="flex flex-col sm:flex-row sm:justify-between gap-1"><h3 class="font-bold text-white">Android Engineer — Aleph Labs Indonesia</h3><span class="font-mono-code text-xs text-emerald-400">Jun 2023 – Jun 2025</span></div><p class="text-sm text-slate-400 mt-1">Product: U by Prodia • Kotlin, Jetpack Compose, Clean Architecture</p></li>
+          <li class="ml-7"><span class="absolute -left-[5px] mt-1.5 w-2.5 h-2.5 rounded-full bg-emerald-400 ring-4 ring-[#101827]"></span><div class="flex flex-col sm:flex-row sm:justify-between gap-1"><h3 class="font-bold text-white">Android Engineer — PT Trenologi Indonesia (Stockbit)</h3><span class="font-mono-code text-xs text-emerald-400">Oct 2021 – Apr 2023</span></div><p class="text-sm text-slate-400 mt-1">Product: Stockbit Malaysia</p></li>
+          <li class="ml-7"><span class="absolute -left-[5px] mt-1.5 w-2.5 h-2.5 rounded-full bg-emerald-400 ring-4 ring-[#101827]"></span><div class="flex flex-col sm:flex-row sm:justify-between gap-1"><h3 class="font-bold text-white">Senior Android Engineer — PT Sumo Teknologi Solusi (Alodokter)</h3><span class="font-mono-code text-xs text-emerald-400">May 2019 – Oct 2021</span></div><p class="text-sm text-slate-400 mt-1">Booking Squad • Java-to-Kotlin Migration</p></li>
+          <li class="ml-7"><span class="absolute -left-[5px] mt-1.5 w-2.5 h-2.5 rounded-full bg-emerald-400 ring-4 ring-[#101827]"></span><div class="flex flex-col sm:flex-row sm:justify-between gap-1"><h3 class="font-bold text-white">Android Engineer — PT Emerio, PT IDstar &amp; Jatis Solutions</h3><span class="font-mono-code text-xs text-emerald-400">Apr 2015 – Apr 2019</span></div><p class="text-sm text-slate-400 mt-1">Blanja.com Seller &amp; Buyer Apps, TensorFlow Android (Triputra), E-Commerce UI</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-16">
+      <div class="bento-card rounded-3xl p-8 md:p-10 flex flex-col md:flex-row md:items-center md:justify-between gap-6"><div><span class="font-mono-code text-xs uppercase tracking-wider text-emerald-400">Education</span><h2 class="text-2xl font-bold text-white mt-2">Gunadarma University</h2><p class="text-slate-300 mt-1"><span class="lang-en">Bachelor of Information Systems</span><span class="lang-id">Sarjana Sistem Informasi</span></p><p class="text-xs text-slate-500 mt-2">2008 – 2014 • Depok, Indonesia</p></div><div class="w-16 h-16 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-2xl"><i class="fa-solid fa-graduation-cap"></i></div></div>
+    </section>
+
+    <section id="contact" class="section-anchor max-w-6xl mx-auto px-6 pt-12 pb-20">
+      <div class="mb-8"><span class="font-mono-code text-xs uppercase tracking-wider text-emerald-400">Let's Connect</span><h2 class="text-2xl md:text-3xl font-bold text-white mt-1"><span class="lang-en">Direct Contact</span><span class="lang-id">Kontak Langsung</span></h2></div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <a href="mailto:reza.koerniawan99@gmail.com" class="bento-card rounded-2xl p-6 flex items-center gap-4 hover:text-emerald-300"><span class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center"><i class="fa-solid fa-envelope"></i></span><span class="text-sm break-all">reza.koerniawan99@gmail.com</span></a>
+        <a href="tel:+6281291008317" class="bento-card rounded-2xl p-6 flex items-center gap-4 hover:text-emerald-300"><span class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center"><i class="fa-brands fa-whatsapp"></i></span><span class="text-sm">+62 812 9100 8317</span></a>
+        <div class="bento-card rounded-2xl p-6 flex items-center gap-4"><span class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center"><i class="fa-solid fa-location-dot"></i></span><span class="text-sm">Jakarta, Indonesia</span></div>
+      </div>
+    </section>
+  </main>
+  <footer class="border-t border-slate-800/80 py-7 text-center text-xs text-slate-500">© 2026 Reza Kurniawan — Senior Android Developer.</footer>
+
+  <style>
+    .tech { display:inline-flex; align-items:center; padding:.4rem .7rem; border-radius:.6rem; background:rgba(15,23,42,.8); border:1px solid rgba(100,116,139,.25); color:#cbd5e1; font-size:.72rem; font-weight:600; }
+  </style>
+  <script>
+    function setLanguage(lang) {
+      const isId = lang === 'id';
+      document.body.classList.toggle('id-mode', isId);
+      const btnEn = document.getElementById('btn-en');
+      const btnId = document.getElementById('btn-id');
+      btnEn.classList.toggle('bg-emerald-500', !isId);
+      btnEn.classList.toggle('text-slate-950', !isId);
+      btnEn.classList.toggle('text-slate-400', isId);
+      btnId.classList.toggle('bg-emerald-500', isId);
+      btnId.classList.toggle('text-slate-950', isId);
+      btnId.classList.toggle('text-slate-400', !isId);
+      btnEn.setAttribute('aria-pressed', String(!isId));
+      btnId.setAttribute('aria-pressed', String(isId));
+      document.documentElement.lang = isId ? 'id' : 'en';
+    }
+  </script>
+</body>
+</html>
